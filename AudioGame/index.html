@@ -1,0 +1,134 @@
+<!--This is the main HTML file for Spelling Game-->
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>Twisty Perception</title>
+		
+		<!--Link to CSS styling-->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<!--Link to Javascript code-->
+		<script type="text/javascript" src="gameFunctions.js"></script>
+
+    
+  <div class="homeheader">
+    <centre>
+          <img src="images/default.png" alt"">
+    </centre>
+  </div>
+
+ <div class="topnav" id="myTopnav">
+    <a href="/index.html" class="active">Home</a>
+    <a href="/games.html" class="active">Overview Of Games</a>
+    <a href="/AudioGame/index.html">Twisty Perception</a>
+    <a href="/MultipleGame/index.html">Sherlock Words</a>
+    <a href="/LibraryBrains/index.html">Library Brains</a>
+  </div>
+		
+	</head>
+	<body>
+		<div class="page">
+			<div class="contents">
+				<form class="game" onsubmit="validate(event);submitAnswers();" action="result.html">
+					
+				
+					<img id="logo" src="images\ear.png">
+					
+					<h1 id="header">Twisty Perception</h1>
+					
+					<br>
+          <p id="difficulty">We must use our ears and spelling knowledge to answer the questions!</p>
+					
+					<p id="difficulty"><strong>Select Your Age!</strong></p>
+
+          <p id="difficulty">Or if you want to be challenged, select a harder difficulty!</p>
+					
+					<input type="button" class="ageSelect" id="age69" value="Ages 6-9" onclick="ageSelected('6-9')">
+					<input type="button" class="ageSelect" id="age1013" value="Ages 10-13" onclick="ageSelected('10-13')">
+					<input type="button" class="ageSelect" id="age1417" value="Ages 14-17" onclick="ageSelected('14-17')">
+					
+					<input type="button" id="btnReset" value="Restart Game" onclick="refreshPage()">
+					
+					<br><br><br>
+					
+				
+					
+					
+					<!-- game questions -->
+					<fieldset id="first">
+						<p id="questionNo">Question 1</p>
+						<h4>Play the sound and type your answer in the box</h4>
+						<audio id="audioContainerOne" controls><source id="firstAudio" src="" type="audio/mpeg"></audio><br>
+						<input type="text" class="textBox" id="firstGuess" name="data" placeholder="What is your guess?" value=""><br>
+						<input type="button" class="btnNext" id="nextOne" value="Next" onclick="nextQuestionOne()">
+					</fieldset>
+					
+					<fieldset id="second">
+						<p id="questionNo">Question 2</p>
+						<h4>Play the sound and type your answer in the box</h4>
+						<audio id="audioContainerTwo" controls><source id="secondAudio" src="" type="audio/mpeg"></audio><br>
+						<input type="text" class="textBox" id="secondGuess" name="data" placeholder="What is your guess?" value=""><br>
+						<input type="button" class="btnPrevious" name="previousOne" value="Previous" onclick="previousQuestionOne()">
+						<input type="button" class="btnNext" id="nextOne" value="Next" onclick="nextQuestionTwo()">
+					</fieldset>
+					
+					<fieldset id="third">
+						<p id="questionNo">Question 3</p>
+						<h4>Play the sound and type your answer in the box</h4>
+						<audio id="audioContainerThree" controls><source id="thirdAudio" src="" type="audio/mpeg"></audio><br>
+						<input type="text" class="textBox" id="thirdGuess" name="data" placeholder="What is your guess?" value=""><br>
+						<input type="button" class="btnPrevious" name="previousOne" value="Previous" onclick="previousQuestionTwo()">
+						<input type="button" class="btnNext" id="nextOne" value="Next" onclick="nextQuestionThree()">
+					</fieldset>
+					
+					<fieldset id="fourth">
+						<p id="questionNo">Question 4</p>
+						<h4>Click the sound button and type your answer in the box below</h4>
+						<audio id="audioContainerFour" controls><source id="fourthAudio" src="" type="audio/mpeg"></audio><br>
+						<input type="text" class="textBox" id="fourthGuess" name="data" placeholder="What is your guess?" value=""><br>
+						<input type="button" class="btnPrevious" name="previousOne" value="Previous" onclick="previousQuestionThree()">
+						<input type="button" class="btnNext" id="nextOne" value="Next" onclick="nextQuestionFour()">
+					</fieldset>
+					
+					<fieldset id="fifth">
+						<p id="questionNo">Question 5</p>
+						<h4>Play the sound and type your answer in the box</h4>
+						<audio id="audioContainerFive" controls><source id="fifthAudio" src="" type="audio/mpeg"></audio><br>
+						<input type="text" class="textBox" id="fifthGuess" name="data" placeholder="What is your guess?" value=""><br>
+						<input type="button" class="btnPrevious" name="previousOne" value="Previous" onclick="previousQuestionFour()">
+						<input type="submit" class="btnSubmit" value="Submit">
+					</fieldset>
+					
+				</form>
+				
+			</div>
+		</div>
+
+    <div class="row">
+          <div class="column">
+              <div class="homeheaders1">
+                  <h2>Sherlock Words</h2>
+              </div>
+              <p>
+                  Its time to put your investigator hat on and join us on finding the hidden words! Using your literacy skills you must choose what is the correct word that is missing from the sentence.
+              </p>
+              <p><a class="btn-btn-default-1" href="/MultipleGame/index.html">Join The Investigation</a></p>
+              <img class="gamepic" src="images/investigator.jpg"  alt="" style="width: 400px; height: 300px">
+          </div>
+          
+          <div class="column">
+              <div class="homeheaders3">
+                  <h2>Library Brains</h2>
+              </div>
+              <p>Feel free to check out our definition game where students are asked to read definitions and decide what word matches the specific definiton. All questions are timed, Good Luck!</p>
+              <p><a class="btn-btn-default-3" href="/LibraryBrains/index.html">Play This Game</a></p>
+              <img class="gamepic1" src="images/audiopic2.jpg" alt="" style="width: 400px; height: 300px">
+          </div>
+          
+      </div>
+	</body>
+  <footer>
+  2021 © All rights reserved.
+</footer>
+</html>

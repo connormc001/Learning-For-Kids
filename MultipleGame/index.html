@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sherlock Words</title>
+    <link rel="stylesheet" href="style.css">
+    <div class="homeheader">
+    <centre>
+          <img src="img/default.png" alt"">
+    </centre>
+  </div>
+
+<div class="topnav" id="myTopnav">
+    <a href="/index.html" class="active">Home</a>
+    <a href="/games.html" class="active">Overview Of Games</a>
+    <a href="/AudioGame/index.html">Twisty Perception</a>
+    <a href="/MultipleGame/index.html">Sherlock Words</a>
+    <a href="/LibraryBrains/index.html">Library Brains</a>
+  </div>
+</head>
+<body>
+  <div class="page">
+		<div class="contents">
+      <img id="logo" src="img\investigator.jpg">
+					
+					<h1 id="header">Sherlock Words</h1>
+					
+					<br>
+          <p id="difficulty">Join in the adventure of finding the hidden words!</p>
+
+          <p id="difficulty"><strong> Sherlock needs your help!</strong></p>
+
+          <p id="difficulty"><strong> Click the button below to start your adventure!</strong></p>
+    <div id="container">
+
+      
+        <div id="start">Start The Investigation!</div>
+        <div id="quiz" style="display: none">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="choices">
+                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+            <div id="timer">
+                <div id="counter"></div>
+                <div id="btimeGauge"></div>
+                <div id="timeGauge"></div>
+            </div>
+            <div id="progress"></div>
+        </div>
+        <div id="scoreContainer" style="display: none"></div>
+    </div>
+    <script src="quiz.js"></script>
+    </div>
+    </div>
+
+    
+    <div class="row">
+          <div class="column">
+              <div class="homeheaders1">
+                  <h2>Twisty Perception</h2>
+              </div>
+              <p>
+                  Its time to put your Listening and Spelling skills into a twisty combo! Students will need to listen to the audio clips and use their thinking caps on what they word they think is being played.
+              </p>
+              <p><a class="btn-btn-default-1" href="/AudioGame/index.html">Play This Game Now</a></p>
+              <img class="gamepic" src="img/gamepic2.jpg"  alt="" style="width: 400px; height: 300px">
+          </div>
+          
+          <div class="column">
+              <div class="homeheaders2">
+                  <h2>Library Brains</h2>
+              </div>
+              <p>Feel free to check out our definition game where students are asked to read definitions and decide what word matches the specific definiton. All questions are timed, Good Luck!</p>
+              <p><a class="btn-btn-default-2" href="/LibraryBrains/index.html">Play This Game Now</a></p>
+              <img class="gamepic1" src="img/audiopic2.jpg"  alt="" style="width: 400px; height: 300px">
+          </div>
+          
+      </div>
+</body>
+<footer>
+  2021 © All rights reserved.
+</footer>
+</html>
